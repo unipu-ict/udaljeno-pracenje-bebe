@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorPozadina"
+    >
+
+    <FrameLayout
+        android:paddingTop="10dp"
+        android:id="@+id/customViewContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="#b27575"
+        android:textStyle="bold"
+        android:text="Baby Monitor Live"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+    <WebView
+        android:paddingTop="15dp"
+        android:id="@+id/webView"
+        android:layout_width="320dp"
+        android:layout_height="230dp"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/tvDatum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvVrijeme"
+        android:paddingTop="15dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/btnVideoRefresh"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="Osvježi video" />
+</LinearLayout>
